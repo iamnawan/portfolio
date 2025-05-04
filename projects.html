@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawan's Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" defer></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="container mx-auto flex justify-between items-center p-4">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a></li>
+          <li><a href="about.html" class="text-gray-600 hover:text-blue-500">About</a></li>
+          <li><a href="projects.html" class="text-gray-600 hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="pt-20 pb-10 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-500 mb-6">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 1</h3>
+            <p class="text-gray-600 mb-4">A web application built with React and Node.js to manage tasks efficiently.</p>
+            <a href="https://github.com/yourusername/project1" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 2</h3>
+            <p class="text-gray-600 mb-4">An e-commerce website developed using Django and PostgreSQL.</p>
+            <a href="https://github.com/yourusername/project2" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Project 3</h3>
+            <p class="text-gray-600 mb-4">A mobile app for tracking fitness goals, built with Flutter.</p>
+            <a href="https://github.com/yourusername/project3" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-blue-500 text-white py-10">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+        <div class="flex justify-center space-x-6">
+          <a href="mailto:your-email@example.com" class="text-white text-2xl hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

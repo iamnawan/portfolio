@@ -1,0 +1,29 @@
+/* Features Section Styles */
+#features {
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+  }
+  
+  #features h2 {
+    font-size: 2.5rem;
+    color: #0077bf;
+    margin-bottom: 30px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
