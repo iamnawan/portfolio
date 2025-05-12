@@ -1,6 +1,7 @@
 /* Portfolio Section Styles */
 #portfolio {
-    padding: 50px 20px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     text-align: center;
     background-color: #f9f9f9;
     color: #333;
@@ -9,7 +10,7 @@
   #portfolio h2 {
     font-size: 2.5rem;
     color: #007BFF;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   
   .portfolio-grid {
@@ -27,3 +28,33 @@
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 1s ease-out;
+  } 
