@@ -1,0 +1,54 @@
+/* Animation CSS Styles ABOUT */
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(30px) scale(0.98);}
+  to { opacity: 1; transform: none;}
+}
+.animate-fade-in-card {
+  opacity: 0;
+  animation: fadeInCard 1s forwards;
+}
+.delay-150 {
+  animation-delay: 0.15s !important;
+}
+.delay-300 {
+  animation-delay: 0.3s !important;
+}
+
+  /* About Styles */
+  
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(30px) scale(0.98);}
+  to { opacity: 1; transform: none;}
+}
+.animate-fade-in-card {
+  opacity: 0;
+  animation: fadeInCard 1s forwards;
+}
+.delay-150 {
+  animation-delay: 0.15s !important;
+}
+.delay-300 {
+  animation-delay: 0.3s !important;
+}
+.animate-fade-in-card {
+  animation: fadeInCard 1s forwards;
+  transform: translateY(30px) scale(0.98);
+}
+.animate-fade-in-card.delay-150 {
+  animation-delay: 0.15s;
+}
+.animate-fade-in-card.delay-300 {
+  animation-delay: 0.3s;
+}
+/* Optional: fade-in for headings and text ABOUT */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: none;}
+}
+.animate-fade-in {
+  animation: fadeIn 1s both;
+}
+.animate-fade-in.delay-150 {
+  animation-delay: 0.15s;
+}
