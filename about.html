@@ -1,210 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nawan's Profile About Me</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/main.css/footer.css">
-    <link rel="stylesheet" href="src/main.css/portfolio.css">
-    <link rel="stylesheet" href="src/main.css/animations.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" defer></script>
-  </head>
-  <body class="bg-gray-100 text-gray-800 font-sans">
-    
-<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-  <div class="container mx-auto flex justify-between items-center p-4">
-    <!-- Logo or Brand Name -->
-    <a href="index.html" class="text-xl font-bold text-blue-500">Nawan's Portfolio</a>
-  </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Nawan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-[#0a192f] text-white font-sans">
+
+  <!-- Header -->
+  <header data-aos="fade-down" class="fixed top-0 z-50 w-full backdrop-blur-sm bg-[#0a192f]/70 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-white text-2xl font-bold tracking-tight hover:text-teal-400 transition duration-300">
+        Nawan
+      </a>
+      <nav class="space-x-6 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-teal-400 transition duration-300">Home</a>
+        <a href="projects.html" class="hover:text-teal-400 transition duration-300">Projects</a>
+        <a href="about.html" class="text-teal-400">About</a>
+      </nav>
+    </div>
   </header>
 
-
-  <!-- Desktop Header (centered) -->
-  <header class="hidden md:flex bg-white shadow-md fixed top-0 left-0 w-full z-50 justify-center">
-    <div class="container mx-auto flex justify-between items-center p-4">
-    <!-- Logo or Brand Name -->
-    <a href="index.html" class="text-xl font-bold text-blue-500">Nawan's Portfolio</a>
-    </div>
-    <nav class="flex space-x-8 py-4">
-      <a href="index.html" class="text-gray-600 hover:text-blue-500 font-bold">Home</a>
-      <a href="about.html" class="text-gray-600 hover:text-blue-500 font-bold">About</a>
-      <a href="projects.html" class="text-gray-600 hover:text-blue-500 font-bold">Projects</a>
-      <a href="#blog" class="text-gray-600 hover:text-blue-500 font-bold">Blog</a>
-      <a href="#contact" class="text-gray-600 hover:text-blue-500 font-bold">Contact</a>
-    </nav>
-  </header>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="block md:hidden text-gray-600 focus:outline-none">
-      <div class="space-y-1.5">
-        <span class="block w-6 h-0.5 bg-gray-600 transition-transform duration-300"></span>
-        <span class="block w-6 h-0.5 bg-gray-600 transition-transform duration-300"></span>
-        <span class="block w-6 h-0.5 bg-gray-600 transition-transform duration-300"></span>
-      </div>
-    </button>
-
-    <!-- Navigation Links -->
-    <nav id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 bg-white md:bg-transparent absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto shadow-md md:shadow-none transition-all duration-300">
-      <ul class="flex flex-col md:flex-row md:space-x-6">
-        <li><a href="index.html" class="text-gray-600 hover:text-blue-500 px-4 py-2">Home</a></li>
-        <li><a href="about.html" class="text-gray-600 hover:text-blue-500 px-4 py-2">About</a></li>
-        <li><a href="projects.html" class="text-gray-600 hover:text-blue-500 px-4 py-2">Projects</a></li>
-        <li><a href="#blog" class="text-gray-600 hover:text-blue-500 px-4 py-2">Blog</a></li>
-        <li><a href="#contact" class="text-gray-600 hover:text-blue-500 px-4 py-2">Contact</a></li>
-      </ul>
-    </nav>
-
-   <!-- Mobile Bottom Navigation (centered) -->
-  <nav class="fixed bottom-0 left-0 w-full bg-white shadow-t z-50 flex md:hidden justify-center items-center py-2 border-t border-gray-200">
-    <div class="flex justify-center space-x-8 w-full max-w-md">
-      <a href="index.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500 text-xs">
-        <i class="fas fa-home text-xl"></i>
-        Home
-      </a>
-      <a href="about.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500 text-xs">
-        <i class="fas fa-user text-xl"></i>
-        About
-      </a>
-      <a href="projects.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500 text-xs">
-        <i class="fas fa-briefcase text-xl"></i>
-        Projects
-      </a>
-      <a href="#blog" class="flex flex-col items-center text-gray-600 hover:text-blue-500 text-xs">
-        <i class="fas fa-blog text-xl"></i>
-        Blog
-      </a>
-      <a href="#contact" class="flex flex-col items-center text-gray-600 hover:text-blue-500 text-xs">
-        <i class="fas fa-envelope text-xl"></i>
-        Contact
-      </a>
-    </div>
-  </nav>
-
-  <!-- ...rest of your content... -->
-
-  
-
-<!-- <script>
-  // JavaScript to toggle the mobile menu with animation
-  (function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    const toggleBars = menuToggle.querySelectorAll('span');
-
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('flex');
-
-      // Animate the toggle button
-      toggleBars[0].classList.toggle('rotate-45');
-      toggleBars[0].classList.toggle('translate-y-2');
-      toggleBars[1].classList.toggle('opacity-0');
-      toggleBars[2].classList.toggle('-rotate-45');
-      toggleBars[2].classList.toggle('-translate-y-2');
-    });
-  })();
-</script> -->
-
-    <!-- About Section -->
-    <!-- <section id="about" class="pt-20 pb-10 bg-gray-50">
-      <div class="container mx-auto text-center">
-        <h1 class="text-4xl font-bold text-blue-500 mb-6">About Me</h1>
-        <p class="text-lg text-gray-600 leading-relaxed">
-          Hello! I'm Nawan, a passionate Web Developer, UI Designer, and Problem Solver. I love creating beautiful and functional websites.
-        </p>
-
-      </div>
-    </section> -->
-    <!-- ...existing code... -->
-
-    <!-- About Section
-    <section id="about" class="pt-20 pb-10 bg-gray-50">
-      <div class="container mx-auto text-center">
-          <h1 class="text-4xl font-bold text-blue-500 mb-6">About Me</h1>
-        <p class="text-lg text-gray-600 leading-relaxed mb-10">
-          Hello! I'm Nawan, a passionate Web Developer, UI Designer, and Problem Solver. I love creating beautiful and functional websites.
-        </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer">
-            <i class="fas fa-bolt text-blue-500 text-4xl mb-4 group-hover:animate-bounce"></i>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Fast</h3>
-            <p class="text-gray-600">Optimized for speed and performance.</p>
-          </div>
-          <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer">
-            <i class="fas fa-mobile-alt text-blue-500 text-4xl mb-4 group-hover:animate-bounce"></i>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Responsive</h3>
-            <p class="text-gray-600">Looks great on any device, big or small.</p>
-          </div>
-          <div class="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer">
-            <i class="fas fa-palette text-blue-500 text-4xl mb-4 group-hover:animate-bounce"></i>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">Modern Design</h3>
-            <p class="text-gray-600">Clean, modern, and interactive UI/UX.</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    
-    <!-- ...existing code... -->
-
-<section id="about" class="pt-24 pb-16 bg-gray-50">
-  <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-    <!-- Profile Image -->
-    <!-- <div class="flex-shrink-0 mx-auto md:mx-0">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" 
-      alt="Nawan Profile" class="rounded-2xl w-48 h-48 object-cover shadow-lg border-4 border-blue-100 hover:border-blue-400 transition duration-300">
-    </div> -->
-    <!-- About Content -->
-    <div class="flex-1 text-center md:text-left">
-      <h1 class="text-4xl font-bold text-blue-500 mb-4 animate-fade-in">About Me</h1>
-      <p class="text-lg text-gray-600 leading-relaxed mb-6 animate-fade-in delay-150">
-        Hello! I'm Nawan, a passionate Web Developer, UI Designer, and Problem Solver. 
-        I love creating beautiful and functional websites.
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 pt-32 pb-16">
+    <section data-aos="fade-up">
+      <h1 class="text-4xl font-bold mb-4 text-teal-400">About Me</h1>
+      <p class="text-gray-300 leading-relaxed">
+        Hello! I'm Nawan — a passionate full-stack developer and aspiring data scientist. I love building intuitive, beautiful, and high-performance digital experiences. This portfolio showcases my journey in tech, the projects I've worked on, and what I'm learning along the way.
       </p>
-      <ul class="text-left mx-auto md:mx-0 max-w-md space-y-2 mb-8">
-        <li class="flex items-center gap-3">
-          <span class="text-blue-500"><i class="fas fa-check-circle"></i></span>
-          <span>🌐 Experienced in HTML, CSS, JavaScript, and modern frameworks</span>
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="text-blue-500"><i class="fas fa-check-circle"></i></span>
-          <span>🎨 Strong eye for UI/UX and responsive design</span>
-        </li>
-        <li class="flex items-center gap-3">
-          <span class="text-blue-500"><i class="fas fa-check-circle"></i></span>
-          <span>🚀 Always learning and building new things</span>
-        </li>
-      </ul>
-      <div class="flex justify-center md:justify-start gap-4">
-        <a href="mailto:your-email@example.com" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/gunawan-siburian" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <section>
-
     </section>
-<!-- ...existing code... -->
+  </main>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- <footer id="contact" class="bg-blue-500 text-white py-10">
-      <div class="container mx-auto text-center">
-        <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-        <div class="flex justify-center space-x-6">
-          <a href="mailto:your-email@example.com" class="text-white text-2xl hover:text-yellow-400"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/gunawan-siburian" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com" class="text-white text-2xl hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-    </footer> -->
-
-  </body>
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+</body>
 </html>
