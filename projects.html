@@ -4,11 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — iamNawan</title>
+   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-black dark:bg-gray-950 dark:text-white font-sans">
 
-  <!-- Header -->
+  <!-- Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+
+
 <!-- Header -->
 <header class="py-6 px-6 flex justify-between items-center">
   <div class="flex items-center gap-4">
@@ -45,5 +69,24 @@
     </div>
   </section>
 
+
+<!-- Back Link -->
+  <div class="text-center mb-10">
+    <a href="index.html" class="text-teal-400 hover:underline text-lg">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-6">
+    © 2025 Nawan. Built with Tailwind CSS.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
