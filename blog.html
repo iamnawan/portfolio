@@ -3,20 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog — iamNawan</title>
+  <title>Blog - iamNawan </title>
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Font (Inter) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
   </style>
 </head>
 <body class="bg-gray-950 text-white">
 
-  <!-- Header -->
+
 <!-- Header -->
 <header class="py-6 px-6 flex justify-between items-center">
   <div class="flex items-center gap-4">
@@ -26,29 +43,32 @@
 </header>
 
   <!-- Blog Main Section -->
-  <section class="py-24 px-6 max-w-5xl mx-auto text-center" data-aos="fade-up">
-    <h2 class="text-4xl font-bold mb-12">Blog</h2>
-    <div class="flex flex-wrap justify-center gap-10 text-gray-300">
-      <!-- Blog Post 1 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3 mb-8 md:mb-0">
-        <h3 class="text-xl font-semibold mb-2 text-teal-400">How to Use Tailwind CSS in Your Projects</h3>
-        <p class="text-gray-400 mb-4">A quick guide to getting started with Tailwind CSS for rapid UI development.</p>
-        <a href="blog/tailwind-getting-started.html" class="text-teal-400 hover:underline">Read More</a>
-      </div>
-      <!-- Blog Post 2 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3 mb-8 md:mb-0">
-        <h3 class="text-xl font-semibold mb-2 text-teal-400">Deploying React Apps with Vite</h3>
-        <p class="text-gray-400 mb-4">Learn how to quickly deploy your React apps using Vite and modern build tools.</p>
-        <a href="blog/deploy-react-vite.html" class="text-teal-400 hover:underline">Read More</a>
-      </div>
-      <!-- Blog Post 3 -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3">
-        <h3 class="text-xl font-semibold mb-2 text-teal-400">Integrating Firebase Authentication</h3>
-        <p class="text-gray-400 mb-4">Step-by-step tutorial on adding Firebase authentication to your web projects.</p>
-        <a href="blog/firebase-auth.html" class="text-teal-400 hover:underline">Read More</a>
-      </div>
+<section class="py-24 px-6 max-w-5xl mx-auto text-center">
+  <h2 class="text-4xl font-bold mb-12" data-aos="fade-up">Blog</h2>
+  <div class="flex flex-wrap justify-center gap-10 text-gray-300">
+    <!-- Blog Post 1 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3 mb-8 md:mb-0 hover:shadow-xl transition transform hover:scale-[1.02] duration-300"
+         data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-xl font-semibold mb-2 text-teal-400">How to Use Tailwind CSS in Your Projects</h3>
+      <p class="text-gray-400 mb-4">A quick guide to getting started with Tailwind CSS for rapid UI development.</p>
+      <a href="blog/tailwind-getting-started.html" class="text-teal-400 hover:underline">Read More</a>
     </div>
-  </section>
+    <!-- Blog Post 2 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3 mb-8 md:mb-0 hover:shadow-xl transition transform hover:scale-[1.02] duration-300"
+         data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2 text-teal-400">Deploying React Apps with Vite</h3>
+      <p class="text-gray-400 mb-4">Learn how to quickly deploy your React apps using Vite and modern build tools.</p>
+      <a href="blog/deploy-react-vite.html" class="text-teal-400 hover:underline">Read More</a>
+    </div>
+    <!-- Blog Post 3 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow w-full md:w-1/3 hover:shadow-xl transition transform hover:scale-[1.02] duration-300"
+         data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2 text-teal-400">Integrating Firebase Authentication</h3>
+      <p class="text-gray-400 mb-4">Step-by-step tutorial on adding Firebase authentication to your web projects.</p>
+      <a href="blog/firebase-auth.html" class="text-teal-400 hover:underline">Read More</a>
+    </div>
+  </div>
+</section>
 
   <!-- Back Link -->
   <div class="text-center mb-10">
