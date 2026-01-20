@@ -31,19 +31,63 @@
       font-family: 'Inter', sans-serif;
     }
   </style>
+  <!-- Local styles -->
+  <link rel="stylesheet" href="src/main.css/header.css">
+  <link rel="stylesheet" href="src/main.css/hero.css">
 </head>
-<body class="bg-gray-950 text-white">
+<body class="bg-gray-950 text-white pt-16">
 
-<!-- Header -->
-<header class="py-6 px-6 flex justify-between items-center">
-  <div class="flex items-center gap-4">
-    <img src="assets/header.jpg" alt="Nawan Profile" class="w-12 h-12 rounded-full border-2 border-teal-400 shadow" />
-    <h1 class="text-1xl font-bold">iamNawan</h1>
+<!-- Header (fixed dark nav with underline indicator) -->
+<header class="fixed w-full top-0 left-0 bg-gray-900 text-white z-50">
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
+    <a href="/" class="flex items-center gap-3">
+      <img src="assets/header.jpg" alt="Nawan Profile" class="w-10 h-10 rounded-full border-2 border-teal-400 shadow" />
+      <span class="font-bold">iamNawan</span>
+    </a>
+
+    <nav>
+      <ul class="hidden md:flex items-center gap-6">
+        <li><a href="#" class="nav-link text-gray-300">Project</a></li>
+        <li><a href="#" class="nav-link text-gray-300">Topics</a></li>
+        <li><a href="#" class="nav-link text-gray-300">Blog Post</a></li>
+      </ul>
+
+      <!-- Mobile toggle (simple) -->
+      <button class="md:hidden text-gray-300" aria-label="Open menu">☰</button>
+    </nav>
   </div>
 </header>
 
+<!-- Decorative hero background (gradient + clouds) -->
+<div class="hero-bg" aria-hidden="true">
+  <!-- left cloud -->
+  <svg class="hero-cloud left" width="520" height="220" viewBox="0 0 520 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g1" x1="0" x2="1">
+        <stop offset="0%" stop-color="#b9f0ff" stop-opacity="0.18" />
+        <stop offset="100%" stop-color="#f3c6ff" stop-opacity="0.12" />
+      </linearGradient>
+    </defs>
+    <path d="M60 160c30-60 120-60 160-40s110-20 170 10 120 20 130 40-40 60-120 60-220-30-280-70z" fill="url(#g1)" />
+  </svg>
+
+  <!-- right cloud -->
+  <svg class="hero-cloud right" width="640" height="260" viewBox="0 0 640 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g2" x1="0" x2="1">
+        <stop offset="0%" stop-color="#ffd6f6" stop-opacity="0.14" />
+        <stop offset="100%" stop-color="#c6f7ff" stop-opacity="0.1" />
+      </linearGradient>
+    </defs>
+    <path d="M70 170c40-70 160-70 210-50s140-30 210 20 140 30 160 60-60 80-180 80-310-40-410-110z" fill="url(#g2)" />
+  </svg>
+
+  <!-- soft radial glow (center bottom) -->
+  <div class="hero-glow"></div>
+</div>
+
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center">
+  <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center hero-section">
     <h1 class="text-5xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Hi, I’m Nawan.</h1>
     <p class="text-xl md:text-2xl text-gray-400 max-w-xl" data-aos="fade-up" data-aos-delay="150">
       I build intuitive web interfaces and solve real-world problems through code.
